@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="./images.png" alt="">
+    <div class="container">
+        <div class="firstHeading">
+        <h2>Triveni Transport Service</h2>
+        </div>
+
+
+        <label for="employeeName">Employee Name:</label>
+        <select id="employeeName">
+            <option value="">Select Employee Name</option>
+            <option value="Neeraj Shrivastav">Neeraj Shrivastav</option>
+            <option value="Digvijay Singh">Digvijay Singh</option>
+            <option value="Moh Galib">Moh Galib</option>
+            <option value="Vivak Shrivastav">Vivak Shrivastav</option>
+            <option value="Sonpal Saini">Sonpal Saini</option>
+        </select>
+
+        <label for="startLocation">Start Location:</label>
+        <select id="startLocation">
+            <option value="">Triveni Sugar Mill</option>
+        </select>
+        
+        <label for="endLocation">End Location:</label>
+        <select id="endLocation">
+            <option value="">Select end location</option>
+            <option value="Khurja">Khurja</option>
+            <option value="Bulandshahr">Bulandshahr</option>
+            <option value="Noida">Noida</option>
+            <option value="Meerut">Meerut</option>
+        </select>
+        
+        <label for="carNumber">Car Number:</label>
+        <select id="carNumber">
+            <option value="">Select Van Number</option>
+            <option value="UP15CD 5898">UP15CD 5898</option>
+            <option value="UP14XX XXX">UP14XX XXX</option>
+            <option value="UP13XX XXX">UP13XX XXX</option>
+            <option value="UP11XX XXX">UP11XX XXX</option>
+        </select>
+        
+        <button onclick="startRide()">Start Ride</button>
+        <button onclick="endRide()">End Ride</button>
+        
+        <h3 id="rideStatus">Ride not started</h3>
+        <p id="distance">Distance: 0.00 km</p>
+        <p id="startTime">Start Time: 00 00</p>
+        <p id="endTime">End Time: 00 00</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
